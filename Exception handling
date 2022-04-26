@@ -1,0 +1,21 @@
+package mypackage;
+
+public class Exception
+{
+	public static void main (String[] args)
+	{
+	try
+	{
+		int dividebyzero=6/0;
+	}
+	catch(ArithmeticException e)
+	{
+		System.out.println("ArithmeticException has occured "+e.getMessage());
+	}
+	finally
+	{
+		System.out.println("This is finally block");
+	}
+
+}
+}
